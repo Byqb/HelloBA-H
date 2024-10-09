@@ -51,3 +51,6 @@ else
     echo "Disk space is okay."
 fi
 
+#Creat A Password
+Pass=$(tr -dc 'A-Za0-9!?%=' < /dev/urandom | head -c 10)
+echo "$Pass"
